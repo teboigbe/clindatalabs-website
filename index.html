@@ -23,6 +23,19 @@
 
 /* Custom ClinData Labs healthcare intelligence illustration */
 .hero-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(310px,.88fr);align-items:center;gap:28px}.hero-copy{min-width:0}.hero-copy h1{font-size:clamp(2.35rem,4.5vw,4.35rem);max-width:750px}.hero-visual{width:100%;filter:drop-shadow(0 24px 40px #00172d55)}.hero-visual svg{width:100%;height:auto;display:block}.hero{padding:75px 0 80px}@media(max-width:950px){.hero-layout{grid-template-columns:1fr}.hero-visual{max-width:550px;margin:12px auto 0}.hero{padding:65px 0}}@media(max-width:550px){.hero-visual{max-width:100%}.hero-copy h1{font-size:clamp(2.2rem,9vw,3rem)}}
+
+/* V1.5: subtle data-and-technology watermark backgrounds */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(100deg,#081c33 0%,#103854 70%,#0c4a59 100%)}
+.hero-layout{display:block;position:relative;z-index:1}
+.hero-copy{position:relative;z-index:2;max-width:850px}
+.hero-copy h1{max-width:850px;font-size:clamp(2.6rem,5.6vw,5rem)}
+.hero-visual{position:absolute;z-index:-1;right:-11%;top:50%;width:min(75%,850px);max-width:none;transform:translateY(-50%);opacity:.15;filter:grayscale(.15);pointer-events:none}
+.hero-visual svg{width:100%;height:auto;display:block}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(circle,#74d7d0 1.1px,transparent 1.5px),linear-gradient(90deg,transparent 98%,#70c8c41a 100%),linear-gradient(0deg,transparent 98%,#70c8c41a 100%);background-size:42px 42px,84px 84px,84px 84px;opacity:.19;mask-image:linear-gradient(90deg,transparent 5%,black 100%)}
+#services,#leadership,#why{position:relative;isolation:isolate}
+#services::before,#leadership::before,#why::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at center,#1a9c9824 1.3px,transparent 1.8px),linear-gradient(45deg,transparent 49.8%,#0d8b8b0b 50%,transparent 50.2%);background-size:32px 32px,180px 180px;opacity:.45;mask-image:linear-gradient(90deg,transparent 12%,black 100%)}
+@media(max-width:950px){.hero-layout{display:block}.hero-visual{right:-28%;width:100%;max-width:none;opacity:.105}.hero{padding:80px 0}}
+@media(max-width:550px){.hero-visual{right:-52%;width:145%;opacity:.085}.hero-copy h1{font-size:clamp(2.3rem,9vw,3.3rem)}.hero::before{opacity:.12}}
 </style>
 </head>
 <body>
