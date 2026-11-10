@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clindatalabs-site.pages.dev/sitemap.xml
